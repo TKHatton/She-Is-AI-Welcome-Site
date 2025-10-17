@@ -665,55 +665,55 @@ footer {
     font-weight: bold;
 }
 
-.social-link {
+.footer-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.footer-social-icons a {
+    width: 50px;
+    height: 50px;
     background: white;
     color: #DD292F;
-    padding: 12px 24px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
-.social-link:hover {
+.footer-social-icons a:hover {
     background: #45FFCA;
     color: #000;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.quick-links {
+.footer-quick-links {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
-.quick-links a {
+.footer-quick-links a {
     color: white;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
+    font-size: 1.1rem;
 }
 
-.quick-links a:hover {
-    color: #45FFCA;
-}
-
-.footer-email {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 2rem 0;
-}
-
-.footer-email a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-email a:hover {
+.footer-quick-links a:hover {
     color: #45FFCA;
 }
 
@@ -842,14 +842,12 @@ footer {
 }
 
 /* ===== ACCESSIBILITY ===== */
-/* Focus states for keyboard navigation */
 a:focus,
 button:focus {
     outline: 3px solid #45FFCA;
     outline-offset: 2px;
 }
 
-/* Skip to main content (add this link in HTML if needed) */
 .skip-to-main {
     position: absolute;
     top: -40px;
@@ -865,7 +863,6 @@ button:focus {
     top: 0;
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
     .btn-primary {
         border: 2px solid white;
@@ -876,7 +873,6 @@ button:focus {
     }
 }
 
-/* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -888,7 +884,6 @@ button:focus {
     }
 }
 
-/* Print styles */
 @media print {
     nav,
     .back-to-top,
@@ -911,12 +906,4 @@ button:focus {
         background: white !important;
         color: black !important;
     }
-}links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 2rem 0;
 }
-
-.social-
