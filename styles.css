@@ -259,6 +259,7 @@ nav {
     display: inline-block;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-primary {
@@ -282,6 +283,19 @@ nav {
     color: #000;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(17, 78, 142, 0.3);
+}
+
+/* ===== EMAIL LINKS IN FAQ ===== */
+.email-link {
+    color: #DD292F;
+    text-decoration: underline;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: #FF5050;
+    text-decoration: underline;
 }
 
 /* ===== SECTIONS ===== */
